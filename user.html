@@ -3,7 +3,7 @@
 <head>
     <script>
         const status = ""
-        fetch("https://api.github.com/users/d3spis3d").then(response => { status = response.status; return response.text() }).then(text => document.write(text))
+        fetch("https://api.github.com/users/d3spis3d").then(response => { status = response.status; return response.text() }).then(text => document.write(status + "\n" + text))
     </script>
 </head>
 
