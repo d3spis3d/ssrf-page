@@ -2,7 +2,8 @@
 
 <head>
     <script>
-        fetch("https://api.github.com/users/d3spis3d").then(response => response.text()).then(text => document.write(text))
+        const status = ""
+        fetch("https://api.github.com/users/d3spis3d").then(response => { status = response.status; return response.text() }).then(text => document.write(text))
     </script>
 </head>
 
